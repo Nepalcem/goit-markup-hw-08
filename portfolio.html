@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item"><a href="index.html">Studio</a></li>
+          <li class="menu__item menu__item--active"><a href="portfolio.html">Portfolio</a></li>
+          <li class="menu__item"><a href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="contacts">
+        <li>
+          <a class="contacts__link" href="mailto:info@devstudio.com">
+            <svg class="icon-small">
+              <use href="images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <a class="contacts__link" href="tel:+380961111111">
+            <svg class="icon-small">
+              <use href="images/icons.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="folio container">
+      <!-- <div class="hidden-title">
+        <h1>Our works</h1>
+      </div> -->
+      <ul class="filters">
+        <li class="filters__list-item"><button class="filters__button" type="button">All</button></li>
+        <li class="filters__list-item"><button class="filters__button" type="button">Websites</button></li>
+        <li class="filters__list-item"><button class="filters__button" type="button">Addons</button></li>
+        <li class="filters__list-item"><button class="filters__button" type="button">Design</button></li>
+        <li class="filters__list-item">
+          <button class="filters__button" type="button">Marketing</button>
+        </li>
+      </ul>
+      <ul class="project-items">
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project1.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Technokryak</h2>
+              <p class="project__sub-title">Web-site</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project2.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Poster New Orlean vs Golden Star</h2>
+              <p class="project__sub-title">Design</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project3.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Restaurant Seafood</h2>
+              <p class="project__sub-title">Addon</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project4.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Project Prime</h2>
+              <p class="project__sub-title">Marketing</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project5.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Project Boxes</h2>
+              <p class="project__sub-title">Addon</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project6.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Inspiration has no Borders</h2>
+              <p class="project__sub-title">Web-site</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project7.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Edition Limited Edition</h2>
+              <p class="project__sub-title">Design</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project8.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Project Lab</h2>
+              <p class="project__sub-title">Marketing</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" class="project__link">
+            <div class="project__img-overlay">
+              <img class="project__image" src="images/img-project9.jpg" alt="" width="370" />
+              <p class="project__overlay-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus minima
+                corporis iusto
+                rerum? Ipsa commodi iste nulla quod quidem omnis!</p>
+            </div>
+            <div class="project__description">
+              <h2 class="project__title">Growing Business</h2>
+              <p class="project__sub-title">Addon</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <a class="logo logo--footer" href="index.html">
+          <span class="logo__web">Web</span><span class="logo__studio--footer">Studio</span>
+        </a>
+
+        <address class="footer__address">Kyiv, Khreshchatyk str. 1, 55</address>
+        <ul class="contacts contacts--footer">
+          <li><a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3 class="footer-social__title">Join Our Team</h3>
+        <ul class="social-icons social-icons--footer">
+          <li class="social-icons__list-item">
+            <a class="social-icons__link social-icons__link--footer" href="#">
+              <svg class="social-icons__icon">
+                <use href="images/icons.svg#instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__list-item">
+            <a class="social-icons__link social-icons__link--footer" href="#">
+              <svg class="social-icons__icon">
+                <use href="images/icons.svg#twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__list-item">
+            <a class="social-icons__link social-icons__link--footer" href="#">
+              <svg class="social-icons__icon">
+                <use href="images/icons.svg#facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons__list-item">
+            <a class="social-icons__link social-icons__link--footer" href="#">
+              <svg class="social-icons__icon">
+                <use href="images/icons.svg#linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-form">
+        <h3 class="footer-form__title">Subscribe to our Newsletter</h3>
+        <form name="subscription" class="subscription">
+          <input class="subscription__input" type="email" name="subscription-email" placeholder="E-mail"
+            id="subscription-email">
+          <label for="subscription-email"></label>
+          <button class="button button--footer" type="submit">
+            <span class="subscription__text">Subscribe</span>
+            <svg class="subscription__icon">
+              <use href="images/icons.svg#icon-send-converted"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    @extend %list;
+    &__list-item {
+        @extend %list-item;
+    }
+    &__link {
+        @extend %link;
+        display: flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        fill: getColor(icon-grey-color);
+        border-radius: 50%;
+        transition: getTransition(background), getTransition(fill);
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+    &__link:hover,
+    &__link:focus {
+        background-color: getColor(accent);
+        fill: white;
+        border-radius: 50%;
+    }
+    &--footer {
+        gap:10px;
+    }
+    &__link--footer {
+        fill: white;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}

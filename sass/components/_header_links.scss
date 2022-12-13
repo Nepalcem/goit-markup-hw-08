@@ -1,0 +1,29 @@
+.contacts {
+    display: flex;
+    margin-left: auto;
+    @extend %list;
+    & li {
+        margin-right: 50px;
+        @extend %list-item;
+    }
+    &__link {
+        @extend %link;
+        @include font-options(14px,1em,0.02em);
+        font-weight: 500;
+        color: getColor(theme-grey);
+        transition: getTransition(color);
+    }
+    &__link:hover,
+    &__link:focus {
+        color: getColor(accent);
+        fill: getColor(accent);
+    }
+    &--footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 9px;
+    }
+    &--footer > li {
+        margin-bottom: 9px;
+    }
+}

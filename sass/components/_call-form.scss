@@ -1,0 +1,87 @@
+.innermodal {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        @include font-options(20px,calc(23/20),0.03em);
+        @extend %heading;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+}
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+    &:nth-last-child(3) {
+        margin-bottom: 20px;
+      }
+    &:nth-last-child(2) {
+        margin-bottom: 30px;
+      }
+    &__label {
+        text-align: left;
+        margin-bottom: 4px;
+        @include font-options(12px,calc(14/12),0.01em);
+        color: getColor(theme-grey);
+    }
+    &__input {
+        padding: 11px 12px 11px 42px;
+        outline: none;
+        border:1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: getTransition(border);
+    }
+    &__input:focus {
+        border-color: getColor(accent);
+    }
+    &__input--message {
+        padding: 12px 16px;
+        resize: none;
+    }
+    &__input--message::placeholder {
+        @include font-options(12px,calc(14/12),0.01em);
+        color: rgba(117, 117, 117, 0.5);
+    }
+    &__input-icon {
+        width:18px;
+        height: 18px;
+        position: absolute;
+        top:30px;
+        left:12px;
+        fill:currentColor;
+        transition: getTransition(color);
+    }
+    &__input:focus + &__input-icon {
+        color: getColor(accent);
+    }
+    &__checkbox-hidden-label {
+        position: relative;
+        display: block;
+    }
+    &__link {
+        @extend %link;
+        color: getColor(accent);
+    }
+    &__checkbox-hidden-input {
+        appearance: none;
+        position:absolute;
+    }
+    &__checkbox-icon {
+        width:16px;
+        height:15px;
+        border: 2px solid getColor(theme-black);
+        border-radius: 2px;
+        position:absolute;
+        top:0;
+        left:12px;
+        fill:currentColor;
+        transition: getTransition(border), getTransition(background);
+    }
+    &__checkbox-hidden-input:checked + &__checkbox-icon {
+        background-color: getColor(accent);
+        border-color: getColor(accent);
+    }
+}

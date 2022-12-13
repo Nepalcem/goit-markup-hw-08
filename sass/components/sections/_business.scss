@@ -1,0 +1,36 @@
+.business__title {
+    @extend %heading;
+    @extend %h2;
+}
+.business__examples {
+    display: flex;
+    justify-content: space-between;
+    @extend %list;
+}
+.work-example {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @extend %list-item;
+    &__image {
+        flex-basis: 370px;
+    }
+    &__title {
+        @extend %heading;
+        @extend %h3;
+        position: absolute;
+        left:50%;
+        bottom:27px;
+        transform: translate(-50%);
+        color: white;
+        
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom:0;
+        background-color: rgba(47, 48, 58, 0.8);
+        height: 70px;
+    }
+}
