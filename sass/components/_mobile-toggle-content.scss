@@ -12,6 +12,9 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
