@@ -1,28 +1,28 @@
 .banner {
-    background-color: var(--background-color);
-    background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ),
+  background-color: var(--background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url("../images/header_background.jpg");
-    background-position: center;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-position: center;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  // padding: 200px 0px;
+  // max-width: 1600px;
+  background-repeat: no-repeat;
+  margin: auto;
+  &__title {
+    @include font-options(44px, 1.36em, 0.06em);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
     text-align: center;
-    padding: 200px 0px;
-    max-width: 1600px;
-    background-repeat: no-repeat;
-    margin: auto;
-    &__title {
-        @include font-options(44px,1.36em,0.06em);
-        font-weight: 900;
-        text-transform: uppercase;
-        color: white;  
-        margin-bottom: 30px;
-        text-align: center;
-        @extend %heading;
-    }
-    main section:not(&) {
-        padding-bottom: 94px;
-      }
+    @extend %heading;
+  }
+  main section:not(&) {
+    // padding-bottom: 94px;
+  }
 }

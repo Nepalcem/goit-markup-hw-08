@@ -1,10 +1,10 @@
 .footer {
     background-color: getColor(background-dark);
     & .container {
-        display: flex;
-        align-items: baseline;
-        padding: 60px 15px;
-        justify-content: space-between;
+        // display: flex;
+        // align-items: baseline;
+        // padding: 60px 15px;
+        // justify-content: space-between;
     }
     &__address {
         color:white;
@@ -16,5 +16,5 @@
     @extend %heading;
     @extend %h3;
     color: white;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }

@@ -1,37 +1,37 @@
 .regular-clients {
-    padding-top: 94px;
-    &__title {
-        @extend %heading;
-        @extend %h2;
-    }
+  // padding-top: 94px;
+  &__title {
+    @extend %heading;
+    @extend %h2;
+  }
 }
 .client-block {
+  // display: flex;
+  // justify-content: space-between;
+  @extend %list;
+  &__list-item {
+    @extend %list-item;
+  }
+  &__icon {
+    @extend %link;
+    padding: 23px 42px;
+    border: 1px solid getColor(icon-grey-color);
+    border-radius: 3px;
     display: flex;
-    justify-content: space-between;
-    @extend %list;
-    &__list-item {
-        @extend %list-item;
-    }
-    &__icon {
-        @extend %link;
-        padding: 23px 42px;
-        border: 1px solid getColor(icon-grey-color);
-        border-radius: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: getTransition(color), getTransition(border),getTransition(fill);
-        color: getColor(icon-grey-color);
-    }
-    &__icon:hover,
-    &__icon:focus {
-        border-color: getColor(accent);
-        fill: getColor(accent);
-        color: getColor(accent);
-    }
-    &__svg {
-        height: 52px;
-        width: 94px;
-        fill: currentColor;
-    }
+    justify-content: center;
+    align-items: center;
+    transition: getTransition(color), getTransition(border), getTransition(fill);
+    color: getColor(icon-grey-color);
+  }
+  &__icon:hover,
+  &__icon:focus {
+    border-color: getColor(accent);
+    fill: getColor(accent);
+    color: getColor(accent);
+  }
+  &__svg {
+    height: 52px;
+    width: 94px;
+    fill: currentColor;
+  }
 }

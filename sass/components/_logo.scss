@@ -1,20 +1,23 @@
 .logo {
-    font-family: "Raleway", sans-serif;
-    @include font-options(26px,1.19em,0.03em);
-    margin-right: 93px;
-    @extend %link;
-        &__web {
-            color: getColor(accent);
-        }
-        &__studio {
-            color:#000;
-        }
-        &__studio--footer {
-            color:#fff;
-        }
-        &--footer {
-            display: inline-block;
+  font-family: "Raleway", sans-serif;
+  @include font-options(24px, 1.17em, 0.03em);
+  /*  margin-right: 93px; */
+  @media screen and (min-width: $desktop) {
+    @include font-options(26px, 1.19em, 0.03em);
+  }
+  @extend %link;
+  &__web {
+    color: getColor(accent);
+  }
+  &__studio {
+    color: #000;
+  }
+  &__studio--footer {
+    color: #fff;
+  }
+  &--footer {
+    /*    display: inline-block;
             margin-bottom: 20px;
-            margin-right: 0;
-        }
-    }
+            margin-right: 0; */
+  }
+}
