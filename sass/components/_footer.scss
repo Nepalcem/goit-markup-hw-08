@@ -18,7 +18,7 @@
     margin-bottom: 12px;
   }
   &__logo {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -29,9 +29,9 @@
   }
 }
 .footer-social {
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 60px;
-      }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .footer-social__title {
   @extend %heading;
@@ -47,4 +47,10 @@
 }
 .contacts--footer li:not(:last-child) {
   margin-bottom: 12px;
+}
+.footer-tablet {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }

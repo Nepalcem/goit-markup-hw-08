@@ -20,7 +20,10 @@
     display: inline-flex;
     justify-content: space-around;
     @media screen and (max-width: 1199px) {
-      transform: translateX(50%);
+      margin: auto;
+    }
+    @media screen and (max-width: 1199px) {
+      display: flex;
     }
   }
 }

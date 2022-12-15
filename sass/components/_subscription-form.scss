@@ -3,7 +3,7 @@
   @extend %h3;
   color: white;
   margin-bottom: 20px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -19,6 +19,15 @@
   &__input {
     width: 100%;
     height: 50px;
+    max-width: 450px;
+    min-width: 290px;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      min-width: 450px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+    }
+
     //margin-right: 12px;
     background-color: getColor(background-dark);
     padding-top: 15px;
@@ -30,8 +39,12 @@
     color: getColor(theme-grey);
     outline: none;
     transition: getTransition(border);
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 20px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: block;
+      margin: 0 auto 20px auto;
     }
   }
   &__input:focus {
