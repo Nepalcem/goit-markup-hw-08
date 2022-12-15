@@ -15,11 +15,36 @@
     color: white;
     @include font-options(14px, calc(24 / 14), 0.03em);
     font-style: normal;
+    margin-bottom: 12px;
   }
+  &__logo {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+  }
+}
+.footer-social {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+      }
 }
 .footer-social__title {
   @extend %heading;
   @extend %h3;
   color: white;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+.contacts--footer {
+  display: block;
+}
+.contacts--footer li:not(:last-child) {
+  margin-bottom: 12px;
 }

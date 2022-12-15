@@ -19,5 +19,8 @@
     /*    display: inline-block;
             margin-bottom: 20px;
             margin-right: 0; */
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 28px;
+    }
   }
 }

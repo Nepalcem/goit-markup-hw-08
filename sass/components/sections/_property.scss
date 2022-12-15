@@ -5,13 +5,23 @@
   }
 }
 .property {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+  gap: 30px;
+  //justify-content: space-between;
   @extend %list;
 }
 .property-item {
   @extend %list-item;
   flex-basis: calc((100% - 3 * 30px) / 4);
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
   @media screen and (max-width: $desktop) {
     margin-bottom: 30px;
   }

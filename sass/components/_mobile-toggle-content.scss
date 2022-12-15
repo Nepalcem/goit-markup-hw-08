@@ -140,6 +140,9 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding: 17px 15px;
+  }
 }
 .icon-menu,
 .icon-close {

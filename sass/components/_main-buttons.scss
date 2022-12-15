@@ -19,5 +19,8 @@
     padding: 10px 28px;
     display: inline-flex;
     justify-content: space-around;
+    @media screen and (max-width: 1199px) {
+      transform: translateX(50%);
+    }
   }
 }

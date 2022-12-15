@@ -22,7 +22,10 @@
   &__list-item {
     @extend %list-item;
     @media screen and (max-width: 767px) {
-      flex-basis: 210px;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      flex-basis: calc((100% - 60px) / 3);
     }
   }
   &__icon {
