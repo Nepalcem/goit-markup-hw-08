@@ -34,6 +34,11 @@ body {
   margin: auto;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* breakpoints */
 $mobile: 480px;
 $tablet: 720px;
