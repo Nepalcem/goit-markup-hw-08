@@ -59,6 +59,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-bottom: 306px;
   &__item {
     @extend %list-item;
   }
@@ -82,6 +83,7 @@
   }
   &-contacts {
     @extend %list;
+    padding-bottom: 64px;
   }
   &-contacts__item {
     @extend %list-item;
@@ -98,6 +100,29 @@
   }
   &-contacts__item:not(:last-child) {
     margin-bottom: 32px;
+  }
+}
+.mobile-menu-social {
+  @extend %list;
+  display: flex;
+  &__item {
+    @extend %list-item;
+    padding: 0 10px;
+  }
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__item:first-child {
+    padding-left: 0px;
+  }
+  &__item:last-child {
+    padding-right: 0px;
+  }
+  &__link {
+    @extend %link;
+    color: getColor(accent);
+    font-weight: 500;
+    @include font-options(18px, calc(22 / 18), 0.02em);
   }
 }
 

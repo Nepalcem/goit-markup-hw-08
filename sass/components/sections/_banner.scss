@@ -13,6 +13,22 @@
   // max-width: 1600px;
   background-repeat: no-repeat;
   margin: auto;
+  @media screen and (max-width:$desktop) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: $desktop) {
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/header_background@2x.jpg");
+  }
   &__title {
     @include font-options(44px, 1.36em, 0.06em);
     font-weight: 900;
@@ -21,8 +37,14 @@
     margin-bottom: 30px;
     text-align: center;
     @extend %heading;
+    @media screen and (max-width: $desktop) {
+      @include font-options(26px, calc(42 / 26), 0.06em);
+    }
   }
-  main section:not(&) {
-    // padding-bottom: 94px;
+ /*  main section:not(&) {
+    padding-bottom: 94px;
+  } */
+  & .container {
+    padding: 118px 60px;
   }
 }
