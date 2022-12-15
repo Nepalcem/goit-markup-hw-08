@@ -21,7 +21,7 @@
   @extend %list;
   &__list-item {
     @extend %list-item;
-    @media screen and (max-width: 719px) {
+    @media screen and (max-width: 767px) {
       flex-basis: 210px;
     }
   }

@@ -1,20 +1,25 @@
 .footer {
-    background-color: getColor(background-dark);
-    & .container {
-        // display: flex;
-        // align-items: baseline;
-        // padding: 60px 15px;
-        // justify-content: space-between;
+  background-color: getColor(background-dark);
+  & .container {
+    // display: flex;
+    // align-items: baseline;
+    padding: 60px 15px;
+    // justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    &__address {
-        color:white;
-        @include font-options(14px,calc(24/14),0.03em);
-        font-style: normal;
-    }
+  }
+  &__address {
+    color: white;
+    @include font-options(14px, calc(24 / 14), 0.03em);
+    font-style: normal;
+  }
 }
 .footer-social__title {
-    @extend %heading;
-    @extend %h3;
-    color: white;
-    // margin-bottom: 20px;
+  @extend %heading;
+  @extend %h3;
+  color: white;
+  // margin-bottom: 20px;
 }
