@@ -1,9 +1,13 @@
 .contacts {
-  // display: flex;
-  // margin-left: auto;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+  }
   @extend %list;
   & li {
-    // margin-right: 50px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+    }
     @extend %list-item;
   }
   & li:not(:last-child) {

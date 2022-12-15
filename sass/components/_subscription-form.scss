@@ -26,9 +26,8 @@
     }
     @media screen and (min-width: $desktop) {
       width: 358px;
+      margin-right: 12px;
     }
-
-    //margin-right: 12px;
     background-color: getColor(background-dark);
     padding-top: 15px;
     padding-left: 16px;

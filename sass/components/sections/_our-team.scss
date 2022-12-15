@@ -1,6 +1,8 @@
 .team {
   background-color: getColor(background-light);
-  // padding-top: 94px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+  }
   @media screen and (max-width: 1199px) {
     padding: 60px 0;
   }

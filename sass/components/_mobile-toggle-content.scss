@@ -133,10 +133,12 @@
   text-decoration: none;
 }
 .main-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 767px) {
     padding-top: 8px;
     padding-bottom: 8px;
   }

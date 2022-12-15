@@ -61,7 +61,7 @@
     position: relative;
     display: block;
     color: getColor(theme-grey);
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 1199px) {
       @include font-options(12px, calc(14 / 12), 0.03em);
     }
   }

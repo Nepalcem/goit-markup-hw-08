@@ -17,7 +17,9 @@
   padding: 0;
 }
 %h2 {
-  /* margin-bottom: 50px; */
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
   @include font-options(36px, 1.17em, 0.03em);
   font-weight: 700;
   color: getColor(theme-black);

@@ -1,5 +1,7 @@
 .regular-clients {
-  // padding-top: 94px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+  }
   @media screen and (max-width: 1199px) {
     padding: 60px 0px;
   }
@@ -13,11 +15,14 @@
   }
 }
 .client-block {
-  // display: flex;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    gap: unset;
+  }
   @extend %list;
   &__list-item {
     @extend %list-item;
