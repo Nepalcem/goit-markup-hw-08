@@ -24,7 +24,7 @@
       </a>
       <nav>
         <ul class="menu">
-          <li class="menu__item"><a href="index.html">Studio</a></li>
+          <li class="menu__item "><a href="index.html">Studio</a></li>
           <li class="menu__item menu__item--active"><a href="portfolio.html">Portfolio</a></li>
           <li class="menu__item"><a href="">Contacts</a></li>
         </ul>
@@ -47,6 +47,12 @@
           </a>
         </li>
       </ul>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Mobile menu toggle">
+          <use class="icon-menu" href="images/icons.svg#menu_40px-1"></use>
+        </svg>
+      </button>
+
     </div>
   </header>
   <main>
@@ -196,49 +202,51 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__logo">
-        <a class="logo logo--footer" href="index.html">
-          <span class="logo__web">Web</span><span class="logo__studio--footer">Studio</span>
-        </a>
+      <div class="footer-tablet">
+        <div class="footer__logo">
+          <a class="logo logo--footer" href="index.html">
+            <span class="logo__web">Web</span><span class="logo__studio--footer">Studio</span>
+          </a>
 
-        <address class="footer__address">Kyiv, Khreshchatyk str. 1, 55</address>
-        <ul class="contacts contacts--footer">
-          <li><a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <h3 class="footer-social__title">Join Our Team</h3>
-        <ul class="social-icons social-icons--footer">
-          <li class="social-icons__list-item">
-            <a class="social-icons__link social-icons__link--footer" href="#">
-              <svg class="social-icons__icon">
-                <use href="images/icons.svg#instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons__list-item">
-            <a class="social-icons__link social-icons__link--footer" href="#">
-              <svg class="social-icons__icon">
-                <use href="images/icons.svg#twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons__list-item">
-            <a class="social-icons__link social-icons__link--footer" href="#">
-              <svg class="social-icons__icon">
-                <use href="images/icons.svg#facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icons__list-item">
-            <a class="social-icons__link social-icons__link--footer" href="#">
-              <svg class="social-icons__icon">
-                <use href="images/icons.svg#linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <address class="footer__address">Kyiv, Khreshchatyk str. 1, 55</address>
+          <ul class="contacts contacts--footer">
+            <li><a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3 class="footer-social__title">Join Our Team</h3>
+          <ul class="social-icons social-icons--footer">
+            <li class="social-icons__list-item">
+              <a class="social-icons__link social-icons__link--footer" href="#">
+                <svg class="social-icons__icon">
+                  <use href="images/icons.svg#instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__list-item">
+              <a class="social-icons__link social-icons__link--footer" href="#">
+                <svg class="social-icons__icon">
+                  <use href="images/icons.svg#twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__list-item">
+              <a class="social-icons__link social-icons__link--footer" href="#">
+                <svg class="social-icons__icon">
+                  <use href="images/icons.svg#facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__list-item">
+              <a class="social-icons__link social-icons__link--footer" href="#">
+                <svg class="social-icons__icon">
+                  <use href="images/icons.svg#linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="footer-form">
         <h3 class="footer-form__title">Subscribe to our Newsletter</h3>
@@ -256,6 +264,39 @@
       </div>
     </div>
   </footer>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40">
+        <use class="icon-close" href="images/icons.svg#close_40px-1"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Studio</a>
+      </li>
+      <li class="mobile-menu__item mobile-menu__item--active"><a class="mobile-menu__link"
+          href="portfolio.html">Portfolio</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Contacts</a></li>
+    </ul>
+    <ul class="mobile-menu-contacts">
+      <li class="mobile-menu-contacts__item"><a href="tel:+12127724150" class="mobile-menu-contacts__link">+1
+          212-772-4150</a></li>
+      <li class="mobile-menu-contacts__item"><a href="mailto:info@devstudio.com"
+          class="mobile-menu-contacts__link">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-menu-social">
+      <li class="mobile-menu-social__item"><a href="#" class="mobile-menu-social__link">Instagram</a></li>
+      <li class="mobile-menu-social__item"><a href="#" class="mobile-menu-social__link">Twitter</a></li>
+      <li class="mobile-menu-social__item"><a href="#" class="mobile-menu-social__link">Facebook</a></li>
+      <li class="mobile-menu-social__item"><a href="#" class="mobile-menu-social__link">LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
