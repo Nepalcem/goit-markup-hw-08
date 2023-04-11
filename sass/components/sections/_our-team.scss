@@ -9,7 +9,7 @@
   &__title {
     @extend %heading;
     @extend %h2;
-    @media screen and(max-width:1199px) {
+    @media screen and (max-width: 1199px) {
       @include font-options(28px, calc(33 / 28), 0.03em);
       margin-bottom: 30px;
     }

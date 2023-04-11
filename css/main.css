@@ -436,12 +436,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-element__input--message:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
 .form-element__input--message::placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
@@ -902,6 +896,11 @@ img {
     padding-top: 94px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .folio {
+    padding-bottom: 60px;
+  }
+}
 
 .filters {
   display: flex;
@@ -909,6 +908,11 @@ img {
   justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .filters {
+    justify-content: start;
+  }
 }
 .filters__button {
   padding: 6px 22px;
@@ -940,6 +944,11 @@ img {
   width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .project {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 1200px) {
   .project {
     width: calc((100% - 60px) / 3);
@@ -954,6 +963,7 @@ img {
 }
 .project__image {
   display: block;
+  width: 100%;
 }
 .project__overlay-text {
   position: absolute;
@@ -1098,7 +1108,7 @@ img {
   display: flex;
 }
 .mobile-menu-social__item {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .mobile-menu-social__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
