@@ -1,3 +1,9 @@
+//// filters
+.hidden {
+  display: none;
+}
+/////
+
 .folio {
   padding-top: 60px;
   @media screen and (min-width: $desktop) {
@@ -46,7 +52,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
+  transition: transform 0.3s ease-in-out; ///filters
 }
+
 .project {
   @extend %list-item;
   background: white;

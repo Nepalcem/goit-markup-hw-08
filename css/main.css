@@ -888,6 +888,10 @@ img {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .folio {
   padding-top: 60px;
 }
@@ -937,6 +941,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project {
