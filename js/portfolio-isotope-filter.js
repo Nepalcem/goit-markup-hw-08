@@ -17,5 +17,3 @@ function displayImages(buttonName) {
       project.classList.add("hidden");
   });
 }
-
-
